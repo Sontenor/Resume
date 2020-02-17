@@ -1,0 +1,126 @@
+// user-section
+
+.user-section {
+	background-color: #f2f2f1;
+
+	.user__img {
+		max-width: 62%;
+		display: block;
+		margin: 0 auto;
+		padding-top: 20px;
+		@media screen and (min-width: 576px) {
+			width: 300px;
+			display: block;
+			margin: 0 auto;
+			padding: 20px 0 0;
+		}
+		@media screen and (min-width: 768px) {
+			width: 344px;
+			padding: 0 20px 0 0;
+		}
+		@media screen and (min-width: 992px) {
+			float: left;
+			width: 300px;
+		}
+		@media screen and (min-width: 1200px) {
+			width: 579px;
+			padding-right: 99px;
+		}
+		@media screen and (min-width: 1279px) {
+			width: 630px;
+		}
+	}
+
+	h2 {
+		@extend %h2style;
+		text-align: center;
+		@media screen and (min-width: 768px) {
+			margin: 0;
+			padding: 38px 0 43px 0;
+		}
+		@media screen and (min-width: 992px) {
+			text-align: left;
+		}
+		@media screen and (min-width: 1200px) {
+			padding: 100px 0 48px 0;
+		}
+	}
+
+	.user__desc {
+		@media screen and (min-width: 959px) {
+			padding-bottom: 36px;
+		}
+	}
+
+
+	.user__infoWrapper {
+		@media screen and (min-width: 576px) {
+			padding-top: 20px;
+		}
+		@media screen and (min-width: 992px) {
+			padding-top: 52px;
+		}
+		@media screen and (min-width: 1200px) {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			padding: 0px;
+		}
+		@media screen and (min-width: 1568px) {
+			padding-bottom: 25px;
+		}
+
+		p {
+			@media screen and (min-width: 992px) {
+				width: 260px;
+			}
+		}
+	}
+
+	.user__info {
+		@media screen and (min-width: 576px) {
+			width: 49%;
+			display: inline-block;
+		}
+		@media screen and (min-width: 768px) {
+			display: inline-block;
+			width: 36%;
+			margin: 0px 47px;
+		}
+		@media screen and (min-width: 992px) {
+			width: 35%;
+			margin: 0px 68px;
+		}
+		@media screen and (min-width: 1200px) {
+			width: 47%;
+			margin: 0 16px 0 0;
+			padding-left: 66px;
+		}
+
+		&-icon {
+			float: left;
+			width: 24px;
+			margin-right: 10px;
+			@media screen and (min-width: 576px) {
+				width: 24px;
+				margin: 12px 5px 45px 0;
+			}
+			@media screen and (min-width: 768px) {
+				padding-top: 10px;
+				margin: 0 10px 0px -47px;
+			}
+			@media screen and (min-width: 1200px) {
+				margin: 3px 0px 0px -67px;
+				width: 41px
+			}
+		}
+	}
+
+
+	h3 {
+		@extend %h3style;
+		margin: 10px 0;
+	}
+
+}
+// end user section
