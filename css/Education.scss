@@ -24,28 +24,23 @@
 	}
 }
 
-
-h3 {
-	@extend %h3style;
-}
-
-.education__diploma {
-	display: inline-block;
-
-	@media screen and (min-width: 992px) {
-	}
-
+.education__diploma-Wrapper {
 	@media screen and (min-width: 1200px) {
-		width: 44%;
+		display: inline-block;
+		width: 45%;
+		padding: 154px 0 99px 74px;
 	}
 
-	.education__diplomaItems {
-		padding-bottom: 30px;
-		border-bottom: 1px solid #cccccc;
+	.education__diploma {
+		display: inline-block;
 
-		.education__diplomaText {
+		.education__diploma-Text {
 			padding-top: 20px;
-		}
+	}
+
+		.education__diploma-Items {
+			padding-bottom: 30px;
+			border-bottom: 1px solid #cccccc;
 
 		span {
 			font-weight: 500;
@@ -55,4 +50,10 @@ h3 {
 	.icon {
 		@extend %iconstyle;
 	}
+	}
+}
+
+
+h3 {
+	@extend %h3style;
 }

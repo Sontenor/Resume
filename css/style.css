@@ -284,81 +284,30 @@ header {
     margin-bottom: 9px;
     cursor: pointer; } }
 
-.header__burger {
-  position: relative;
-  width: 320px;
-  z-index: 3; }
-  .header__burger #check-menu {
-    display: none; }
-  .header__burger label {
-    display: block;
-    position: absolute;
+.header__menu {
+  position: relative; }
+  .header__menu .fas fa-bars {
+    width: 50px;
     color: #fff;
-    top: 0;
-    right: 2px;
-    width: 100px;
-    height: 100%;
-    cursor: pointer;
-    line-height: 40px; }
-  .header__burger .burger-line {
-    position: absolute;
-    top: 8px;
-    right: 10px;
-    width: 35px;
-    height: 2px;
-    background-color: #fff;
-    -webkit-transition: .5s all;
-    -o-transition: .5s all;
-    transition: .5s all;
+    font-weight: bold;
+    font-size: 20px;
     cursor: pointer; }
-  .header__burger .second, .header__burger .third {
-    top: 18px; }
-  .header__burger .fourth {
-    top: 28px; }
-  .header__burger .header__mobile {
-    display: block;
-    position: absolute;
-    bottom: -5px;
-    right: 11px;
-    -webkit-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    transform: translateY(100%);
-    max-height: 0;
-    font-size: 0;
-    overflow: hidden;
-    -webkit-transition: .5s all;
-    -o-transition: .5s all;
-    transition: .5s all; }
-    .header__burger .header__mobile .active {
-      color: #2ecc71; }
-    .header__burger .header__mobile-item {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      color: #fff;
-      border-top: 1px solid rgba(255, 255, 255, 0.3);
-      background-color: #252e30; }
-      .header__burger .header__mobile-item:hover {
-        color: #2ecc71;
-        background-color: rgba(0, 0, 0, 0.9); }
-  .header__burger #check-menu:checked ~ .header__mobile {
-    max-height: 500px;
-    font-size: 16px; }
-  .header__burger #check-menu:checked ~ .first {
-    display: none; }
-  .header__burger #check-menu:checked ~ .second {
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg); }
-  .header__burger #check-menu:checked ~ .third {
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg); }
-  .header__burger #check-menu:checked ~ .fourth {
-    display: none; }
   @media screen and (min-width: 992px) {
-    .header__burger {
+    .header__menu {
       display: none; } }
+  .header__menu .header__menu-nav {
+    position: absolute;
+    width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #252e30;
+    top: 47px;
+    right: 0; }
 
 .user-section {
   background-color: #f2f2f1; }
@@ -558,7 +507,7 @@ header {
         .resume__section .resume .resume__link {
           margin: 46px 0 120px 0; } }
 
-.education__diploma .icon {
+.education__diploma-Wrapper .education__diploma .icon {
   color: #fff;
   font-size: 14px;
   font-weight: 700;
@@ -579,17 +528,20 @@ header {
   margin: 0;
   padding: 30px 0; }
 
-.education__diploma {
+@media screen and (min-width: 1200px) {
+  .education__diploma-Wrapper {
+    display: inline-block;
+    width: 45%;
+    padding: 154px 0 99px 74px; } }
+
+.education__diploma-Wrapper .education__diploma {
   display: inline-block; }
-  @media screen and (min-width: 1200px) {
-    .education__diploma {
-      width: 44%; } }
-  .education__diploma .education__diplomaItems {
+  .education__diploma-Wrapper .education__diploma .education__diploma-Text {
+    padding-top: 20px; }
+  .education__diploma-Wrapper .education__diploma .education__diploma-Items {
     padding-bottom: 30px;
     border-bottom: 1px solid #cccccc; }
-    .education__diploma .education__diplomaItems .education__diplomaText {
-      padding-top: 20px; }
-    .education__diploma .education__diplomaItems span {
+    .education__diploma-Wrapper .education__diploma .education__diploma-Items span {
       font-weight: 500; }
 
 .text-section {
