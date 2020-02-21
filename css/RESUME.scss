@@ -1,0 +1,57 @@
+.resume__section {
+	background-color: #f2f2f1;
+	margin-top: 100px;
+	position: relative;
+
+	&:after {
+		content: "";
+		border-left: 30px solid transparent;
+		border-right: 30px solid transparent;
+		border-top: 20px solid #f2f2f1;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.resume {
+		text-align: center;
+
+		@media screen and (min-width: 1200px) {
+			padding: 0px 98px;
+		}
+
+		h2 {
+			@extend %h2style;
+			padding: 20px 0;
+
+			@media screen and (min-width: 767px) {
+				margin: 0;
+			}
+
+			@media screen and (min-width: 992px) {
+				padding: 30px 0;
+			}
+
+			@media screen and (min-width: 1200px) {
+				font-size: 30px;
+				padding: 100px 0 48px 0;
+			}
+		}
+
+		.resume__link {
+			@extend %linkstyle;
+			margin-bottom: 20px;
+			&:hover {
+				@extend %hover;
+			}
+
+			@media screen and (min-width: 992px) {
+				margin: 20px 0;
+			}
+
+			@media screen and (min-width: 1200px) {
+				margin: 46px 0 120px 0;
+			}
+		}
+	}
+}

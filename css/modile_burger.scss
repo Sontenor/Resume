@@ -6,6 +6,7 @@
 	width: 320px;
 	z-index: 3;
 
+
 	label {
 		display: block;
 		position: absolute;
@@ -26,6 +27,7 @@
 		height: 2px;
 		background-color: #fff;
 		transition: .5s all;
+		cursor: pointer;
 	}
 
 	.second, .third {
@@ -46,6 +48,10 @@
 		font-size: 0;
 		overflow: hidden;
 		transition: .5s all;
+
+		.active {
+			color: #2ecc71;
+		}
 
 		&-item {
 			display: block;

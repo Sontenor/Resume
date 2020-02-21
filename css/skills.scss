@@ -1,0 +1,82 @@
+
+
+.skills__text {
+	text-align: center;
+
+	@media screen and (min-width: 768px) {
+		width: 43%;
+		float: left;
+		text-align: left;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 92px;
+	}
+
+	.skills__subtitle {
+		@extend %h2style;
+		margin: 40px;
+
+		@media screen and (min-width: 768px) {
+			margin: 20px 0;
+		}
+
+		@media screen and (min-width: 1200px) {
+			margin: 0 0 48px 0;
+		}
+	}
+}
+
+.progressWrapper {
+	padding-bottom: 30px;
+
+	@media screen and (min-width: 768px) {
+		display: inline-block;
+		width: 57%;
+		padding-left: 92px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding: 113px 0 100px 92px;
+	}
+}
+
+	.skills__link {
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 56px;
+		text-transform: uppercase;
+		display: inline-block;
+		height: 56px;
+		padding: 0 38px;
+		border: 2px solid #2ecc71;
+		color: #2ecc71;
+		margin: 20px 0;
+
+		&:hover {
+			border-color: #25F4A5;
+			color: #25F4A5;
+		}
+	}
+
+.progressLine__subtitle {
+	@extend %h3style;
+}
+.progress {
+	background-color: #f2f2f1;
+
+	.progressItem-1, .progressItem-3 {
+		@extend %progressItem;
+		width: 90%;
+	}
+
+	.progressItem-2 {
+		@extend %progressItem;
+		width: 80%;
+	}
+
+	.progressItem-4 {
+		@extend %progressItem;
+		width: 70%;
+	}
+}
