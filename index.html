@@ -5,7 +5,9 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<title>Resume</title>
 </head>
 <body>
@@ -34,7 +36,7 @@
             <!--header menu-->
                 <ul class="header-menu">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
+                    <li><a class="active" href="#">About Me</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Resume</a></li>
                     <li><a href="#">Testimonials</a></li>
@@ -42,16 +44,24 @@
                     <li><a href="#">Contact Me</a></li>
                 </ul>
 
-                <div class="header__menu">
-                    <i class="fas fa-bars"></i>
-                    <div class="header__menu-nav">
-                        <a href="" class="header__menu-item">Home</a>
-                        <a href="" class="header__menu-item">About me</a>
-                        <a href="" class="header__menu-item">Skills</a>
-                        <a href="" class="header__menu-item">Resume</a>
-                        <a href="" class="header__menu-item">Testimonials</a>
-                        <a href="" class="header__menu-item">Portfolio</a>
-                        <a href="" class="header__menu-item">Contact Me</a>
+                <div class="header__burger">
+                    <div>
+                        <input type="checkbox" id="check-menu">
+                        <label for="check-menu">MENU</label>
+                        <div class="burger-line first"></div>
+                        <div class="burger-line second"></div>
+                        <div class="burger-line third"></div>
+                        <div class="burger-line fourth"></div>
+
+                    <nav class="header__mobile">
+                        <a class="header__mobile-item" href="#">Home</a>
+                        <a class="header__mobile-item active" href="#">About Me</a>
+                        <a class="header__mobile-item" href="#">Skills</a>
+                        <a class="header__mobile-item" href="#">Resume</a>
+                        <a class="header__mobile-item" href="#">Testimonials</a>
+                        <a class="header__mobile-item" href="#">Portfolio</a>
+                        <a class="header__mobile-item" href="#">Contact Me</a>
+                    </nav>
                     </div>
                 </div>
             </div>
@@ -168,23 +178,23 @@
 
 <!-- RESUME -->
 
-<section class="resume__section">
-    <div class="container">
-        <div class="resume">
-            <h2>Resume</h2>
-            <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. </p>
-            <a class="resume__link" href="#">Download Resume</a>
+    <section class="resume__section">
+        <div class="container">
+            <div class="resume">
+                <h2>Resume</h2>
+                <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. </p>
+                <a class="resume__link" href="#">Download Resume</a>
         </div>
 
     </div>
-</section>
+    </section>
 
 <!-- end RESUME -->
 
 <!-- EDUCATION -->
 
-<section class="education__section">
-    <div class="container">
+    <section class="education__section">
+        <div class="container">
 
         <div class="education">
             <h2 class="education__subtitle">My Education</h2>
@@ -212,24 +222,171 @@
             </div>
         </div>
 
-    </div>
+        </div>
 </section>
 
 <!-- end EDUCATION -->
 
+<!-- text-section -->
+
 <section class="text-section">
     <div class="container">
-        <div class="text__wrapper">
-            <p class="text">“Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.”</p>
-            <p class="text__autor">John Stone</p>
-        
+
+            <div class="owl-coruosel">
+
+                <div class="slide">
+                    <p class="text">“Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.”</p>
+                    <p class="text__autor">John Stone</p>
+                </div>
+
+                <div class="slide">
+                    <p class="text">“Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.”</p>
+                    <p class="text__autor">John Stone</p>
+                </div>
+
+                <div class="slide">
+                    <p class="text">“Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam.”</p>
+                    <p class="text__autor">John Stone</p>
+                </div>
+
+            </div>
             <div class="text__circlesWrapper">
                 <div class="text__full"></div>
                 <div class="text__empty"></div>
                 <div class="text__empty"></div>
             </div>
+    </div>
+</section>
+
+<!-- end text section -->
+
+
+<!-- portfolio section -->
+
+<section class="portfolio">
+    <div class="container">
+        <h2 class="portfolio__subtitle">Portfolio</h2>
+        <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri. </p>
+
+            <div class="portfolio__projects">
+                <div class="portfolio__projectWrapper">
+                    <div class="portfolio__project1"></div>
+                    <div class="portfolio__projectOverlay">
+                        <a href="#"><i class="portfolio__projectIcon fas fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio__projectWrapper">
+                    <div class="portfolio__project2"></div>
+                    <div class="portfolio__projectOverlay">
+                        <a href="#"><i class="portfolio__projectIcon fas fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio__projectWrapper">
+                    <div class="portfolio__project3"></div>
+                    <div class="portfolio__projectOverlay">
+                        <a href="#"><i class="portfolio__projectIcon fas fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio__projectWrapper">
+                    <div class="portfolio__project4"></div>
+                    <div class="portfolio__projectOverlay">
+                        <a href="#"><i class="portfolio__projectIcon fas fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio__projectWrapper">
+                    <div class="portfolio__project5"></div>
+                    <div class="portfolio__projectOverlay">
+                        <a href="#"><i class="portfolio__projectIcon fas fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio__projectWrapper">
+                    <div class="portfolio__project6"></div>
+                    <div class="portfolio__projectOverlay">
+                        <a href="#"><i class="portfolio__projectIcon fas fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio__projectWrapper">
+                    <div class="portfolio__project7"></div>
+                    <div class="portfolio__projectOverlay">
+                        <a href="#"><i class="portfolio__projectIcon fas fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio__projectWrapper">
+                    <div class="portfolio__project8"></div>
+                    <div class="portfolio__projectOverlay">
+                        <a href="#"><i class="portfolio__projectIcon fas fa-search"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio__projectWrapper">
+                    <div class="portfolio__project9"></div>
+                    <div class="portfolio__projectOverlay">
+                        <a href="#"><i class="portfolio__projectIcon fas fa-search"></i></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+
+<!-- end portfolio section -->
+
+<!-- contact section -->
+
+<section class="contact">
+    <div class="container">
+        <h2 class="contact__title">Contact Me</h2>
+        <div class="contact__container">
+
+            <div class="contact__mi">
+                <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
+                <p>122 33rd Street East</p>
+                <p>Saskatoon, SK</p>
+                <p>S7K 1R9</p>
+                <div class="contact__info">
+                    <p><span>Email:</span>info@focal.com</p>
+                    <p><span>Phone:</span>1-306-222-2323</p>
+                </div>
+            </div>
+
+            <form class="contact__form" action="#" method="get">
+                <div>
+                    <label class="lable_text">Name <span class="star">*</span></label>
+                    <input class="contact__text" tabindex="1" name="username" type="text">
+                </div>
+                <div>
+                    <label class="lable_text">Email Address <span class="star">*</span></label>
+                    <input class="contact__text" tabindex="2" name="email" type="email">
+                </div>
+                <div>
+                    <label class="lable_text">Email Address <span class="star">*</span></label>
+                    <textarea class="textarea" name="text"></textarea>
+                </div>
+                <button class="button" type="submit">Contact Me</button>
+            </form>
         </div>
     </div>
 </section>
+
+<!--end contact section -->
+
+<footer class="footer">
+    <div class="footer__text">
+        Copyright 2014 Focal - Built With Passion
+    </div>
+
+    <div class="footer__socials">
+        <a class="footer__socialsLink" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="footer__socialsLink" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="footer__socialsLink" href="#"><i class="fab fa-pinterest"></i></a>
+        <a class="footer__socialsLink" href="#"><i class="fab fa-google-plus"></i></a>
+        <a class="footer__socialsLink" href="#"><i class="fas fa-basketball-ball"></i></a>
+        <a class="footer__socialsLink" href="#"><i class="fab fa-invision"></i></a>
+    </div>
+</footer>
+
+                <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+                <script type="text/javascript" src="slick/slick.min.js"></script>
+                <script type="text/javascript" src="js/coruosel.js"></script>
+                <script src="https://kit.fontawesome.com/89fb0d3ffb.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
