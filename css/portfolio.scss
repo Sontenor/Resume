@@ -8,13 +8,10 @@
 
 	&__projects {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		flex-wrap: wrap;
 		margin-top: 96px;
 
-		@media screen and (min-width: 576px) {
-			justify-content: center;
-		}
 
 		@media screen and (min-width: 992px) {
 			justify-content: space-around;

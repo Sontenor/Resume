@@ -1,1 +1,1 @@
-$('.single-item').slick();
+$('.owl-coruosel').slick();
